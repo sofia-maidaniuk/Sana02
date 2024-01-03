@@ -5,13 +5,13 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.Write("Input coef int a for quadratic equation: ");
+        Console.Write("Input coef int 'a' for quadratic equation: ");
         int a = int.Parse(Console.ReadLine());
 
-        Console.Write("Input coef int b for quadratic equation: ");
+        Console.Write("Input coef int 'b' for quadratic equation: ");
         int b = int.Parse(Console.ReadLine());
 
-        Console.Write("Input coef int c for quadratic equation: ");
+        Console.Write("Input coef int 'c' for quadratic equation: ");
         int c = int.Parse(Console.ReadLine());
 
         double d;
@@ -28,8 +28,8 @@ class Program
         }
         else
         {
-            x1 = (-b + Math.Sqrt(d)) / 2 * a;
-            x2 = (-b - Math.Sqrt(d)) / 2 * a;
+            x1 = (-b + Math.Sqrt(d)) / (2 * a);
+            x2 = (-b - Math.Sqrt(d)) / (2 * a);
             Console.WriteLine($"\nEquation has 2 roots: x1 = {x1}, x2 = {x2}"); 
         }
     }
